@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: cart-service
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos地址
+      password: 123456
+      username: nacos
   profiles:
     active: dev
   datasource:

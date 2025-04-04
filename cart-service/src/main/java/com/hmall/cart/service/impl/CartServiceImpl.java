@@ -30,7 +30,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements ICartService {
 
-    // private final IItemService itemService;
+//    private final IItemService itemService;
+//    private final DiscoveryClient discoveryClient;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
