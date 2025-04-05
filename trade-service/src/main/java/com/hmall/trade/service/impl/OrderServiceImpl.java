@@ -36,9 +36,15 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements IOrderService {
 
-    private final IItemService itemService;
-    private final IOrderDetailService detailService;
-    private final ICartService cartService;
+    private IItemService itemService;
+    private  IOrderDetailService detailService;
+    private  ICartService cartService;
+
+    private OrderServiceImpl(IItemService itemService, IOrderDetailService detailService, ICartService cartService) {
+        this.itemService = itemService;
+        this.detailService = detailService;
+        this.cartService = cartService;
+    }
 
     @Override
     @Transactional
