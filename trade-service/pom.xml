@@ -24,11 +24,11 @@
             <version>1.0.0</version>
         </dependency>
         <!--api-->
-<!--        <dependency>
+        <dependency>
             <groupId>com.heima</groupId>
             <artifactId>hm-api</artifactId>
             <version>1.0.0</version>
-        </dependency>-->
+        </dependency>
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
